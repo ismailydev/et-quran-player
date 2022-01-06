@@ -1,4 +1,4 @@
-import { audioList } from '../data/sounds.js';
+import { audioList } from '../data/audios.js';
 
 const Playlist = (_ => {
 
