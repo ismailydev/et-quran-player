@@ -1,4 +1,5 @@
 import { audioList } from '../data/audios.js';
+import PlayInfo from './play-info.js';
 
 const Playlist = (_ => {
 
@@ -24,6 +25,7 @@ const Playlist = (_ => {
                 </li>`;
         });
         playlistEL.innerHTML = markup;
+        PlayInfo.setState(currentAudio, audios);
     }
 
     const playAudio = index => {
@@ -82,4 +84,5 @@ const Playlist = (_ => {
     }
 })();
 
+PlayInfo.init();
 export default Playlist;
