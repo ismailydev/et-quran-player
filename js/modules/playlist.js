@@ -1,5 +1,6 @@
 import { audioList } from '../data/audios.js';
 import PlayInfo from './play-info.js';
+import TrackBar from './track-bar.js';
 
 const Playlist = (_ => {
 
@@ -85,4 +86,5 @@ const Playlist = (_ => {
 })();
 
 PlayInfo.init();
+TrackBar.init();
 export default Playlist;
