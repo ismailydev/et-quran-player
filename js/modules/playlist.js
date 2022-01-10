@@ -64,7 +64,9 @@ const Playlist = (_ => {
                 playAudio([...event.target.parentNode.parentNode.parentNode.children].indexOf(audio));
             }
         });
-
+        currentAudio.addEventListener('timeupdate', () => {
+            TrackBar.setState(currentAudio);
+        });
         currentAudio.addEventListener('ended', () => {
             playNextAudio();
         });
